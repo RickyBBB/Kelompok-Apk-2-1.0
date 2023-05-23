@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Viga;
+  src: url(fonts/Viga-Regular.ttf);
+}
+
+body {
+  background-image: url(img/geometric-leaves.webp);
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: "Viga";
+  font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/fotokeluargacemara.jfif);
+  background-size: cover;
+  height: 905px !important;
+  text-align: center;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 260px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/* Openning */
+.container h2 {
+  font-weight: bold;
+}
+
+.container p {
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px !important;
+}
+
+.container span {
+  font-weight: bold;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: black !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 7);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Viga;
+  src: url(fonts/Viga-Regular.ttf);
+}
+
+.navbar-brand {
+  font-family: "Viga";
+  font-size: 32px;
+}
+
+.ok {
+  margin-top: 100px;
+}
+
+.kontak {
+  margin-top: 200px;
+}
+
+section .container {
+  margin-top: 250px;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: black !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 7);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
